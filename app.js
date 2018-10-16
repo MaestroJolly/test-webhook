@@ -7,7 +7,7 @@ var winston = require('winston'); // data logger
 var expressWinston = require('express-winston'); // required to create middleware that log http requests
 expressWinston.requestWhitelist.push('body');
 var port = process.env.PORT || 3000 // setting the port the server should listen to 
-process.env.SECRET_HASH = "sr89#$443" // making the secret hash you set in your dashboard available to the environment variable
+process.env.SECRET_HASH = "your-secret-hash" // making the secret hash you set in your dashboard available to the environment variable
 app.set('port', port);
 
 
